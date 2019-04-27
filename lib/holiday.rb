@@ -61,7 +61,6 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 
-holiday = []
 def all_holidays_with_bbq(holiday_hash)
  # return an array of holiday names (as symbols) where supply lists
  # include the string "BBQ"
@@ -70,15 +69,11 @@ def all_holidays_with_bbq(holiday_hash)
    holiday.each do |holiday, supply|
      supply.each do |supply|
        if supply = "BBQ"
-         holiday.push(holiday)
+         print holiday
        end
      end
    end
  end
- puts holiday 
- end
- 
-
 
 
 
