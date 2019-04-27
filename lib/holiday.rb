@@ -70,7 +70,7 @@ def all_holidays_with_bbq(holiday_hash)
    holiday.each do |holiday, supply|
      supply.each do |supply|
        if supply = "BBQ"
-         return holiday
+         holiday.push(holiday)
        end
      end
    end
